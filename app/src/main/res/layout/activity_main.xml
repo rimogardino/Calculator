@@ -8,13 +8,15 @@
     tools:context="org.labs.musaka.calculator.MainActivity"
     android:background="#000"
     android:weightSum="10"
+
     >
 
-    <TextView
+    <EditText
         android:id="@+id/calc_display"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/init_display_text"
+
         android:textAlignment="textEnd"
         android:textSize="26sp"
         android:textStyle="bold"
@@ -76,7 +78,7 @@
             android:id="@+id/functionsPad"
             android:layout_toEndOf="@id/numberPad"
 
-            >
+            android:layout_toRightOf="@id/numberPad">
 
 
             <Button android:backgroundTint="#2b3893" android:id="@+id/button_delete"  android:onClick="makeCorrection" android:height="80dp" android:text="@string/correction_button" android:layout_gravity="end"/>
